@@ -1,0 +1,102 @@
+/* Шрифт Inter */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    
+    html, body, [class*="css"], .stMarkdown, p, li, div, span, label, input, textarea {
+        font-family: 'Inter', sans-serif;
+        color: #ffffff !important;
+    }
+    
+    /* Фон */
+    .stApp {
+        background: linear-gradient(135deg, #0f0519, #1a0b33, #49165e);
+        background-size: 400% 400%;
+        animation: gradient 20s ease infinite;
+    }
+    
+    @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: #ffffff !important;
+        text-align: center;
+        text-shadow: 0 0 15px rgba(186, 104, 200, 0.8), 0 0 30px rgba(186, 104, 200, 0.4);
+        font-weight: 700;
+    }
+
+    /* Поля ввода */
+    .stTextInput > div > div > input,
+    .stTextArea > div > div > textarea {
+        background-color: rgba(255, 255, 255, 0.08) !important;
+        color: #ffffff !important;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        padding: 16px;
+        font-weight: 500;
+        backdrop-filter: blur(20px) saturate(200%) !important;
+        -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+        box-shadow: 
+            inset 0 1px 0 rgba(255, 255, 255, 0.1),
+            0 8px 32px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+    }
+    
+    .stTextInput > div > div > input:focus,
+    .stTextArea > div > div > textarea:focus {
+        background-color: rgba(255, 255, 255, 0.12) !important;
+        border-color: rgba(186, 104, 200, 0.7) !important;
+        box-shadow: 
+            inset 0 1px 0 rgba(255, 255, 255, 0.15),
+            0 0 0 2px rgba(186, 104, 200, 0.2),
+            0 8px 32px rgba(0, 0, 0, 0.25);
+        outline: none;
+    }
+    
+    .stTextInput > div > div > input::placeholder,
+    .stTextArea > div > div > textarea::placeholder {
+        color: rgba(255, 255, 255, 0.6) !important;
+        font-weight: 400;
+    }
+    
+    .stTextInput > div > div,
+    .stTextArea > div > div {
+        background-color: transparent !important;
+    }
+    
+    .css-1d391kg {
+        background: linear-gradient(to bottom, rgba(40, 15, 80, 0.98), rgba(20, 5, 40, 0.98));
+        border-right: 2px solid #ba68c8;
+        box-shadow: 8px 0 30px rgba(0, 0, 0, 0.7);
+        padding: 20px;
+    }
+    
+    .streamlit-expanderHeader {
+        background-color: rgba(106, 27, 154, 0.3);
+        color: #ffffff;
+        border-radius: 12px;
+    }
+    
+    .stSuccess, .stInfo {
+        background-color: rgba(106, 27, 154, 0.2);
+        border-left: 4px solid #ba68c8;
+        border-radius: 10px;
+    }
+    
+    div.stButton > button {
+        background: linear-gradient(to right, #4a148c, #6a1b9a) !important;
+        color: white !important;
+        border-radius: 12px;
+        border: none;
+        padding: 12px 24px;
+        font-weight: bold;
+        box-shadow: 0 4px 15px rgba(74, 20, 140, 0.5);
+        transition: all 0.3s ease !important;
+    }
+
+    div.stButton > button:hover {
+        background: linear-gradient(to right, #6a1b9a, #7b1fa2) !important;
+        box-shadow: 0 0 20px rgba(106, 27, 154, 0.8);
+        transform: translateY(-2px);
+    }
