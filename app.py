@@ -307,7 +307,7 @@ if st.session_state.last_operation == 'generate':
                         abstract_text = authors_split[0].strip()
                         
                         
-                        st.write(f"**Описание:** {abstract_text}")
+                        st.write(f"** :** {abstract_text}")
                     else:
                         st.write(f"**Фрагмент:** {text[:300]}...")
                 else:
